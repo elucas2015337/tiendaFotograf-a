@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/estilo.css">
+<meta charset="utf-8">
+  <meta name="description" content="Photography">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Elder Lucas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Photography Examples;</title>
+</head>
+
+<body>
+				<ul id= "barra">
+					<li id="tres" style="float:left"><a><img src="imagenes/logoH.jpg" alt="Camera" style="width:200px;height:60px;border:0;"></a></li>
+					<li id="uno"><a href="files/info.html">Info</a></li>
+				</ul>
+				
+				<div class="slideshow">
+					<a><img  class="mySlides transition" src="imagenes/Div.jpg"></a>
+					<a href="files/animals.html"><img  class="mySlides transition" src="imagenes/animalsban.jpg"></a>
+					<a href="files/cars.html"><img  class="mySlides transition" src="imagenes/carsban.jpg"></a>
+					<a href="files/food.html"><img  class="mySlides transition" src="imagenes/cocinaban.jpg"></a>
+					<a href="files/planes.html"><img  class="mySlides transition" src="imagenes/planesban.jpg"></a>
+					<a href="files/sport.html"><img  class="mySlides transition" src="imagenes/sportban.jpg"></a>
+					<a href="files/tourism.html"><img  class="mySlides transition" src="imagenes/tourismban.jpg"></a>
+				</div>
+
+
+                <ul id= "barra2">
+					<li id="dos"><a href="files/animals.html">Animals & Nature</a></li>
+					<li id="dos"><a href="files/sport.html">Sport</a></li>
+					<li id="dos"><a href="files/food.html">Cook & Food</a></li>
+					<li id="dos"><a href="files/tourism.html">Tourism</a></li>
+					<li id="dos"><a href="files/planes.html">Planes</a></li>
+					<li id="dos"><a href="files/cars.html">Cars</a></li>
+				</ul>
+				
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+			
+
+</body>
+</html>

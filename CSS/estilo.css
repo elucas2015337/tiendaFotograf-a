@@ -1,0 +1,110 @@
+nav {
+    border: 1px solid black;
+    background-color: black;
+}
+
+body {
+  background-color: LightGray;
+}
+
+.gallery{
+	margin: 10px 50px,;
+}
+
+.gallery img{
+	width: 300px;
+	padding: 5px;
+	transition: 0.5s;
+}
+
+.gallery img:hover{
+	transform: scale(1.1);
+	
+}
+
+body {
+  font-size: 15px;
+}
+
+#barra2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+#barra {
+  list-style-type: none;
+  margin: 0px;
+  padding: 4px;
+  overflow: hidden;
+  position: -webkit-sticky; 
+  background-color: #ffffff;
+  top: 0;
+}
+
+#uno{
+	float: right;
+}
+
+#uno a {
+	display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  border: 0;
+  text-decoration: none;
+  font-size: 40px;
+  background-color: gray;
+}
+
+#uno a:hover {
+  background-color: black;
+  color: white;
+}
+	
+#dos {
+  float: left;
+}
+
+#dos a {
+	display: list-item;
+  color: gray;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#dos a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+footer { 
+  display: block;
+}
+
+.mySlides {display:none;}
+
+.transition{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.transitionclass{}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.slideshow img{
+	max-width: 100%;
+	padding: 5px;
+	transition: 0.5s;
+	transform: 
+}
+
+.slideshow img:hover{
+	transform: scale(1.1);
+	}
